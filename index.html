@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tacoma Giving Machine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stage">
+    <div class="kiosk" id="kiosk" aria-label="Animated Tacoma Giving Machine">
+      <div class="kiosk-shell">
+        <div class="kiosk-main">
+          <div class="screen-wrap">
+            <header class="screen-header">
+              <span class="header-script">Light the World</span>
+              <span class="header-caps">Giving Machines</span>
+            </header>
+            <div class="screen" id="screen">
+              <div class="grid" id="grid" role="list"></div>
+              <div class="tray" id="tray" aria-hidden="true">
+                <span>Thank you for giving</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="side-panel">
+            <svg class="star" viewBox="0 0 100 100" aria-hidden="true">
+              <polygon points="50,2 54,30 78,8 62,34 98,38 64,46 86,70 58,54 50,98 42,54 14,70 36,46 2,38 38,34 22,8 46,30" />
+            </svg>
+            <p class="side-copy">
+              100% of your<br />donation goes to<br />the charity<br />cause of<br />your choice
+            </p>
+            <p class="side-url">LightTheWorld.org</p>
+            <div class="reader" id="reader" aria-hidden="true">
+              <div class="reader-screen">
+                <span class="reader-ready">READY</span>
+              </div>
+              <div class="reader-pad"></div>
+              <div class="pay-card" id="payCard"></div>
+            </div>
+            <p class="reader-hint">Tap, insert, or swipe</p>
+          </aside>
+        </div>
+
+        <footer class="kiosk-base">
+          <p class="sponsor-label">Sponsored by</p>
+          <p class="sponsor-name">The Church of Jesus Christ of Latter-day Saints</p>
+          <div class="icon-row" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </footer>
+      </div>
+      <div class="casters" aria-hidden="true"><i></i><i></i></div>
+    </div>
+
+    <p class="caption">
+      What’s inside the Tacoma machine — tap a card to read it.
+      Cards drop as if someone just gave.
+    </p>
+  </div>
+
+  <div class="overlay" id="overlay" hidden>
+    <button class="overlay-close" id="overlayClose" type="button" aria-label="Close">×</button>
+    <img id="overlayImg" alt="" />
+    <p class="overlay-title" id="overlayTitle"></p>
+  </div>
+
+  <script src="kiosk.js"></script>
+</body>
+</html>
