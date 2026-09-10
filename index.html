@@ -6,19 +6,19 @@
   <title>Tacoma Giving Machine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="stage">
     <div class="kiosk" id="kiosk" aria-label="Animated Tacoma Giving Machine">
       <div class="kiosk-shell">
+        <div class="brand-lockup">
+          <img class="brand-star" src="brand/star-white.png" alt="" />
+          <img class="brand-wordmark" src="brand/wordmark-white.png" alt="Light the World Giving Machine" />
+        </div>
         <div class="kiosk-main">
           <div class="screen-wrap">
-            <header class="screen-header">
-              <span class="header-script">Light the World</span>
-              <span class="header-caps">Giving Machines</span>
-            </header>
             <div class="screen" id="screen">
               <div class="grid" id="grid" role="list"></div>
               <div class="tray" id="tray" aria-hidden="true">
@@ -28,9 +28,6 @@
           </div>
 
           <aside class="side-panel">
-            <svg class="star" viewBox="0 0 100 100" aria-hidden="true">
-              <polygon points="50,2 54,30 78,8 62,34 98,38 64,46 86,70 58,54 50,98 42,54 14,70 36,46 2,38 38,34 22,8 46,30" />
-            </svg>
             <p class="side-copy">
               100% of your<br />donation goes to<br />the charity<br />cause of<br />your choice
             </p>
