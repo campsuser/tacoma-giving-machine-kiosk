@@ -24,6 +24,15 @@ const CARDS = [
   "toddler-pajamas-card.jpg",
   "week-of-groceries-card.jpg",
   "work-boots-card.jpg",
+  "vegetable-seeds-and-tools-card.jpg",
+  "goat-card.jpg",
+  "100-polio-vaccines-card.jpg",
+  "2-baby-resuscitation-kits-card.jpg",
+  "school-commuter-bicycle-card.jpg",
+  "2-chickens-card.jpg",
+  "refugee-support-card.jpg",
+  "5-educational-feeding-sets-card.jpg",
+  "125-therapeutic-food-packets-card.jpg",
 ];
 
 const CYCLE_MS = 4200;
